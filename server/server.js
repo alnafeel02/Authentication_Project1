@@ -11,10 +11,7 @@ dot.config(); // Load environment variables from .env file
 
 connectDB();
 
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://authentication-project1-client.onrender.com",
-];
+const allowedOrigins = ["https://authentication-project1-client.onrender.com"];
 
 app.use(express.json() );  
 app.use(express.urlencoded({ extended: true }));
